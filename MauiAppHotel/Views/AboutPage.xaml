@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.AboutPage"
+             Title="AboutPage"
+             NavigationPage.HasNavigationBar="False">
+    <VerticalStackLayout VerticalOptions="Center" 
+                         HorizontalOptions="Center"
+                         Padding="10"
+                         Spacing="20">
+        <Frame Padding="10">
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Hotel Booking App"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       TextColor="{StaticResource Primary}"
+                       HorizontalOptions="Center"/>
+                <Label Text="Developer:"
+                       FontAttributes="Bold"/>
+                <Label Text="Luiz Henrique Bueno" 
+                       TextColor="{StaticResource Primary}"/>
+                <Label Text="Development Date:"
+                       FontAttributes="Bold"/>
+                <Label Text="May, 2025"
+                       TextColor="{StaticResource Primary}"/>
+            </VerticalStackLayout>
+        </Frame>
+        <Button Text="Return" 
+                WidthRequest="150"
+                Clicked="Button_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

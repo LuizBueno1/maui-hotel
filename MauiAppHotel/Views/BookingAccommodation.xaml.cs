@@ -39,4 +39,17 @@ public partial class BookingAccommodation : ContentPage
 		dtpck_checkout.MinimumDate = checkin_selected_date.AddDays(1);
 		dtpck_checkout.MaximumDate = checkin_selected_date.AddMonths(6);
 	}
+
+    private void Btn_About_Clicked(object sender, EventArgs e)
+    {
+		try
+		{
+			Navigation.PushAsync(new AboutPage());
+		} 
+		catch(Exception ex)
+		{
+			DisplayAlert("Oops", ex.Message, "OK");
+		}
+    }
+
 }
