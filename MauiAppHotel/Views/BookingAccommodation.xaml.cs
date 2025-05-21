@@ -1,3 +1,5 @@
+using MauiAppHotel.Models;
+
 namespace MauiAppHotel.Views;
 
 public partial class BookingAccommodation : ContentPage
@@ -18,15 +20,30 @@ public partial class BookingAccommodation : ContentPage
 		dtpck_checkout.MaximumDate = dtpck_checkin.Date.AddMonths(6);
 	}
 
-	private void Button_Clicked(object sender, EventArgs e)
+	private async void Button_Clicked(object sender, EventArgs e)
 	{
 		try
 		{
-			Navigation.PushAsync(new ConfirmedAccommodation());
+			Accommodation a = new Accommodation
+			{
+				SelectedRoom = (Room)pck_room.SelectedItem,
+				AdultCount = Convert.ToInt32(stp_adults.Value),
+				ChildrenCount = Convert.ToInt32(stp_kids.Value),
+				CheckInDate = dtpck_checkin.Date,
+				CheckOutDate = dtpck_checkout.Date
+			};
+
+
+
+			await Navigation.PushAsync(new ConfirmedAccommodation()
+			{
+				BindingContext = a
+			});
+
 		}
 		catch (Exception ex)
 		{
-			DisplayAlert("Oops", ex.Message, "OK");
+			await DisplayAlert("Oops", ex.Message, "OK");
 		}
 	}
 
