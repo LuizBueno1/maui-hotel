@@ -3,30 +3,44 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.AboutPage"
              Title="AboutPage"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#F8FAFC">
+    
     <VerticalStackLayout VerticalOptions="Center" 
                          HorizontalOptions="Center"
                          Padding="10"
                          Spacing="20">
-        <Frame Padding="10">
+        <Frame Padding="10" BackgroundColor="#FFFFFF">
             <VerticalStackLayout Spacing="10">
                 <Label Text="Hotel Booking App"
-                       FontSize="24"
+                       FontSize="28"
                        FontAttributes="Bold"
-                       TextColor="{StaticResource Primary}"
-                       HorizontalOptions="Center"/>
+                       TextColor="#1E3A8A"
+                       HorizontalOptions="Center"
+                       FontFamily="PlayfairDisplay"/>
+                
                 <Label Text="Developer:"
-                       FontAttributes="Bold"/>
+                       FontAttributes="Bold"
+                       TextColor="#1F2937"
+                       FontFamily="PoppinsMedium"/>
                 <Label Text="Luiz Henrique Bueno" 
-                       TextColor="{StaticResource Primary}"/>
+                       TextColor="#10B981"
+                       FontFamily="PoppinsRegular"/>
+                
                 <Label Text="Development Date:"
-                       FontAttributes="Bold"/>
+                       FontAttributes="Bold"
+                       TextColor="#1F2937"
+                       FontFamily="PoppinsMedium"/>
                 <Label Text="May, 2025"
-                       TextColor="{StaticResource Primary}"/>
+                       TextColor="#10B981"
+                       FontFamily="PoppinsRegular"/>
             </VerticalStackLayout>
         </Frame>
         <Button Text="Return" 
                 WidthRequest="150"
-                Clicked="Button_Clicked"/>
+                Clicked="Button_Clicked"
+                BackgroundColor="#3B82F6"
+                TextColor="#FFFFFF"
+                FontFamily="PoppinsMedium"/>
     </VerticalStackLayout>
 </ContentPage>
