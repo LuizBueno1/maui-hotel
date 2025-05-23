@@ -22,7 +22,7 @@
                 </HorizontalStackLayout>
                 
                 <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
-                    <Label Text="Kids: " TextColor="#1F2937" FontFamily="PoppinsRegular"/>
+                    <Label Text="Children: " TextColor="#1F2937" FontFamily="PoppinsRegular"/>
                     <Label Text="{Binding ChildrenCount}" TextColor="#10B981" FontFamily="PoppinsMedium"/>
                 </HorizontalStackLayout>
             </StackLayout>
