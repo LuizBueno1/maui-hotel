@@ -33,23 +33,23 @@ The app features a modern, clean design with carefully selected color schemes an
 <div align="center">
 
 ### 📋 Main Booking Interface
-*Calculate rates and select your perfect accommodation*
+*Select your perfect accommodation*
 
-<img src="YOUR_IMAGES_DIRECTORY/main-screen.png" alt="Main Booking Screen" width="300" style="border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); margin: 20px;">
+<img src="images/MainBooking.jpeg" alt="Main Booking Screen" width="300" style="border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); margin: 20px;">
 
 ---
 
 ### ℹ️ About Page
 *Application details and developer information*
 
-<img src="YOUR_IMAGES_DIRECTORY/about-screen.png" alt="About Page Screen" width="300" style="border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); margin: 20px;">
+<img src="images/About.jpeg" alt="About Page Screen" width="300" style="border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); margin: 20px;">
 
 ---
 
 ### ✅ Booking Confirmation
 *Review your reservation details and total costs*
 
-<img src="YOUR_IMAGES_DIRECTORY/confirmation-screen.png" alt="Confirmation Screen" width="300" style="border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); margin: 20px;">
+<img src="images/BookingConfirmation.jpeg" alt="Confirmation Screen" width="300" style="border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); margin: 20px;">
 
 </div>
 
